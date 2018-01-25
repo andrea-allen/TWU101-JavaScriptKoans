@@ -13,6 +13,8 @@ $(document).ready(function() {
     countMoney(100,500,10,4,500);
 
     // Problem 5
-    // call your problem 5 code here
+    correctText(     [["zara", "dhyaan", "dein"],
+                     ["mazarat", "chahenge"],
+                     ["attention", "please"]]);
 
 });
