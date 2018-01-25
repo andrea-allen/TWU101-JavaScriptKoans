@@ -29,6 +29,16 @@ function kiteGame(numberOfKites) {
     var answer = "";
 
     // write some code here!
+    for(var x=1; x<=100; x++){
+        if(x%3==0){
+            answer=answer.concat("Peche! "); }
+        if(x%5==0){
+            answer=answer.concat("Ipo kaate! ");}
+        else if(x%5>0 && x%3>0){
+            answer=answer.concat(x, " "); }
+
+
+    }
 
     changeElementText("#answer", answer);
 }
