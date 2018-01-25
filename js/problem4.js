@@ -26,4 +26,32 @@
 
 */
 
-// Write your JavaScript here
+
+function changeElementText(element, answer) {
+    $(element).text(answer);
+}
+
+function countMoney(){
+    var numberOfBills=0;
+    var permissibleNotes=[5,10,20,50,100,500,1000]
+    var listOfNotes="";
+    var sumOfNotes=0;
+
+    for(var a=0; a<arguments.length; a++){
+        listOfNotes=listOfNotes.concat(arguments[a],", ");
+        }
+
+    changeElementText("#listOfNotes", listOfNotes);
+
+
+    for(var bill=0; bill<arguments.length;bill++){
+        if (permissibleNotes.includes(arguments[bill])){
+            sumOfNotes+=arguments[bill];
+        }
+        else{ break; }
+    }
+
+    changeElementText("#sumOfNotes", sumOfNotes);
+
+
+}
